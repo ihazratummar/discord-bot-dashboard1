@@ -1,0 +1,68 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.guilds_count {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #555555;
+}
+.server{
+    padding-left: 50px;
+}
+.server-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.server-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.server-item img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    margin-right: 15px;
+    
+}
+
+
+.server-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(171, 87, 250, 0.6);
+}
+
+@media (max-width: 600px) {
+    .server-item {
+        width: 100%;
+    }
+}
