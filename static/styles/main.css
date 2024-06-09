@@ -62,16 +62,6 @@ header .rightnav .login, .logout{
 .hero .bot-bio {
     color: #fff;
     font-weight: bold;
-    font-style: oblique;
-}
-
-.container div .add-to-discord {
-    background-color: #1e2124;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-bottom: 20px;
 }
 
 
@@ -83,10 +73,15 @@ header .rightnav .login, .logout{
     text-decoration: none;
     display: block;
     margin: 20px auto;
+    font-weight: bolder;
 }
 
 .add-to-discord:hover,.login2:hover{
-    background-color: #ab57fa;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px #d1a0ff;
+    color: #d1a0ff;
+    border-radius: 25px;
+
 }
 
 
