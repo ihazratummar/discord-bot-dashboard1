@@ -18,13 +18,13 @@
     <!-- Header Area -->
     <header>
         <a class="logo" href="#" >
-        <img src="https://media.discordapp.net/attachments/659261445523111957/891971152950464542/logo_red_with_red.png?ex=66656dde&is=66641c5e&hm=b8323cda35e1bbf513cbc26ee8f1456fce867f42290027470a2c28e034b25a7e&=&format=webp&quality=lossless&width=475&height=475" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
+        <img src="https://media.discordapp.net/attachments/659261445523111957/891971143827877938/gold_logo.png?ex=6666169c&is=6664c51c&hm=3adce5792bb84ce434cdd27d56f8b3056941ce10e2e303549af7468314500cd7&=&format=webp&quality=lossless" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
         </a>
         <div class="leftnav">
             <a href="/dashboard" class="nav-link"><i class="fa-solid fa-house"></i> Dashboard</a>
             <a href="https://discord.com/oauth2/authorize?client_id=1108627218520887306&permissions=8&integration_type=0&scope=bot" target="_blank" class="nav-link"><i class="fa-solid fa-link"></i> Invite me</a>
-            <a href="#" class="nav-link"><i class="fa-solid fa-shield-cat"></i> Status</a>
-            <a href="#" class="nav-link"><i class="fa-solid fa-terminal"></i> Commands</a>
+            <a href="/status" class="nav-link"><i class="fa-solid fa-shield-cat"></i> Status</a>
+            <a href="/commands" class="nav-link"><i class="fa-solid fa-terminal"></i> Commands</a>
         </div>
         <div class="rightnav">
             <a href="/logout" class="logout">
@@ -40,7 +40,7 @@
             <p class="guilds_count">The bot are in {{ guilds|length }} servers</p>
             <div class="server">
                 {% for guild in guilds %}
-                <a class="server-item" href="/guild/{{guild['id']}}">
+                <a class="server-item" href="/guild/{{guild['id']}}/main/">
                     {% if guild['icon'] %}
                     <img src="https://cdn.discordapp.com/icons/{{guild['id']}}/{{guild['icon']}}.png">
                     {% else %}
