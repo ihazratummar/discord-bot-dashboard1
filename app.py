@@ -88,7 +88,7 @@ def status():
     user_guild = get_user_guild(session.get('token'))
     bot_guild = get_bot_guilds()
     mutual_guilds = get_mutual_guild(user_guild, bot_guild)
-    return render_template('status.html', guilds = mutual_guilds)
+    return render_template('status.html', guilds = mutual_guilds )
 
 @app.route('/commands')
 def commands():
